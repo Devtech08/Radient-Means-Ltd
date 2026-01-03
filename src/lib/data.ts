@@ -1,3 +1,4 @@
+
 import { Truck, Gem, HardHat, Sparkles, Wrench, Building, Shield } from 'lucide-react';
 
 export const services = [
@@ -29,6 +30,7 @@ export const services = [
     icon: Wrench,
     title: 'Electrical Engineering',
     description: 'Specialized electrical engineering solutions, including installation, maintenance, and system design for various applications.',
+    href: '/services/electrical-engineering',
   },
   {
     icon: Building,
@@ -41,3 +43,5 @@ export const services = [
     description: 'Providing comprehensive security solutions, including personnel and technology, to protect your assets and ensure peace of mind.',
   },
 ];
+
+    
