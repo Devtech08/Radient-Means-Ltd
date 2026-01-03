@@ -24,12 +24,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="flex-1 flex items-center">
+        <div className="flex items-center">
             <Link href="/" className="mr-6 flex items-center space-x-2">
             <Icons.logo className="h-8 w-8" />
             <span className="font-bold hidden sm:inline-block">Radiant Means</span>
             </Link>
-            
+        </div>
+
+        <div className="flex flex-1 items-center justify-end space-x-4">
             <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
                 <Link
@@ -44,9 +46,6 @@ export default function Header() {
                 </Link>
             ))}
             </nav>
-        </div>
-
-        <div className="flex items-center justify-end space-x-4">
            {/* Mobile Menu */}
           <div className="md:hidden">
             <Sheet>
