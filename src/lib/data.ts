@@ -36,6 +36,7 @@ export const services = [
     icon: Building,
     title: 'Real Estate Development',
     description: 'Developing premium residential and commercial properties that combine modern design with functionality and long-term value.',
+    href: '/services/real-estate-development',
   },
   {
     icon: Shield,
