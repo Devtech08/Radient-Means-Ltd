@@ -6,7 +6,7 @@
  * - SendContactEmailInput - The input type for the sendContactEmail function.
  */
 
-import { ai } from '../genkit';
+import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 
 export const SendContactEmailInputSchema = z.object({
