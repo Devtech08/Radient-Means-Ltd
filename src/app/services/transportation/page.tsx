@@ -118,10 +118,10 @@ export default function TransportationPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map(step => (
-                <div key={step.step} className="text-center relative">
+                <div key={step.step} className="text-center flex flex-col items-center">
                     <h3 className="text-6xl font-bold text-primary/10 mb-2">{step.step}</h3>
-                    <h4 className="text-xl font-semibold absolute top-10 left-0 right-0">{step.title}</h4>
-                    <p className="text-muted-foreground mt-12">{step.description}</p>
+                    <h4 className="text-xl font-semibold mb-2 h-12">{step.title}</h4>
+                    <p className="text-muted-foreground">{step.description}</p>
                 </div>
             ))}
           </div>
