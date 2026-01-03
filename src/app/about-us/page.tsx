@@ -1,74 +1,94 @@
-
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Heart, Users } from 'lucide-react';
+import { Globe, Target, CheckCircle, Award, Users, Shield } from 'lucide-react';
 
 export default function AboutUsPage() {
+  const corporateValues = [
+    {
+      icon: Award,
+      title: 'Excellence',
+      description: 'We strive for the highest quality in every service we deliver.',
+    },
+    {
+      icon: Shield,
+      title: 'Integrity',
+      description: 'We conduct our business with unwavering honesty and transparency.',
+    },
+    {
+      icon: Users,
+      title: 'Customer Focus',
+      description: 'Our clients are at the heart of everything we do.',
+    },
+    {
+      icon: CheckCircle,
+      title: 'Reliability',
+      description: 'We are committed to being a dependable partner for all our clients.',
+    },
+  ];
+
   return (
-    <div className="container mx-auto p-4 md:p-8 space-y-12">
-      <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline">About CareHub</h1>
-        <p className="text-muted-foreground text-lg mt-4 max-w-3xl mx-auto">
-          Your trusted partner in health. We are dedicated to providing accessible, high-quality medical care through innovative technology and a compassionate approach.
-        </p>
-      </section>
-
-      <section className="grid md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold font-headline">Our Mission</h2>
-          <p className="text-muted-foreground">
-            Our mission is to revolutionize healthcare by making it simple, convenient, and patient-centric. We believe that everyone deserves access to the best medical expertise, regardless of their location. By bridging the gap between patients and doctors through our seamless platform, we empower individuals to take control of their health and well-being.
+    <div className="bg-background">
+      {/* Page Header */}
+      <section className="py-16 md:py-24 bg-primary/5">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary">About Radiant Means Ltd.</h1>
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+            Discover our mission, our goals, and the core values that drive our commitment to excellence.
           </p>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Prioritizing patient comfort and convenience.</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Leveraging technology to improve health outcomes.</span>
-            </li>
-             <li className="flex items-center gap-3">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Upholding the highest standards of medical ethics.</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <Image
-            src="https://placehold.co/600x400.png"
-            width={600}
-            height={400}
-            alt="Team behind CareHub"
-            data-ai-hint="team portrait"
-            className="rounded-lg shadow-lg"
-          />
         </div>
       </section>
 
-      <section className="text-center bg-secondary/30 p-8 rounded-lg">
-        <h2 className="text-3xl font-bold font-headline">Our Values</h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center">
-            <div className="bg-primary/10 p-4 rounded-full mb-4">
-                <Heart className="h-8 w-8 text-primary" />
+      {/* Mission and Goal Section */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="pr-8">
+              <h2 className="text-3xl font-bold text-primary flex items-center mb-4">
+                <Globe className="h-8 w-8 mr-3 text-accent" />
+                Our Mission
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8">
+                To be a leading diversified service provider, recognized for our commitment to due diligence, quality, and sustainable value creation for our stakeholders.
+              </p>
+
+              <h2 className="text-3xl font-bold text-primary flex items-center mb-4">
+                <Target className="h-8 w-8 mr-3 text-accent" />
+                Our Goal
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Radiant Means Ltd. is committed to generating sustainable income through the provision of high-quality and reliable services to customers, thereby ensuring long-term growth and profitability.
+              </p>
             </div>
-            <h3 className="text-xl font-bold">Compassion</h3>
-            <p className="text-muted-foreground mt-2">We approach every interaction with empathy and kindness.</p>
+            <div>
+              <Image
+                src="https://picsum.photos/seed/mission/600/450"
+                width={600}
+                height={450}
+                alt="Corporate Mission"
+                data-ai-hint="business strategy meeting"
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-primary/10 p-4 rounded-full mb-4">
-                <CheckCircle className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold">Excellence</h3>
-            <p className="text-muted-foreground mt-2">We are committed to the highest quality of care and service.</p>
+        </div>
+      </section>
+
+      {/* Corporate Values Section */}
+      <section className="py-16 md:py-24 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Corporate Values</h2>
+            <p className="mt-2 text-lg text-muted-foreground">The principles that guide our actions.</p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-primary/10 p-4 rounded-full mb-4">
-                <Users className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold">Integrity</h3>
-            <p className="text-muted-foreground mt-2">We operate with transparency, honesty, and respect.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {corporateValues.map((value) => (
+              <div key={value.title} className="text-center p-6">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-4">
+                  <value.icon className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
+                <p className="text-muted-foreground">{value.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
