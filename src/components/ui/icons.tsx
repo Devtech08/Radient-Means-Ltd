@@ -1,18 +1,13 @@
+import Image from 'next/image';
+
 export const Icons = {
-  logo: (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 100"
+  logo: (props: Omit<React.ComponentProps<typeof Image>, 'src' | 'alt'>) => (
+    <Image
+      src="/logo.png"
+      alt="Radiant Means Logo"
+      width={100}
+      height={100}
       {...props}
-    >
-      <path
-        fill="#5A287D"
-        d="M50,0 C22.4,0,0,22.4,0,50 C0,67.7,10,83.1,24.6,91.9L24.6,73.1 C17.3,66.8,12.8,59,12.8,50 C12.8,29.5,29.5,12.8,50,12.8 C59,12.8,66.8,17.3,73.1,24.6L91.9,24.6 C83.1,10,67.7,0,50,0Z"
-      />
-      <path
-        fill="#F37021"
-        d="M75.4,8.1L75.4,26.9 C82.7,33.2,87.2,41,87.2,50 C87.2,70.5,70.5,87.2,50,87.2 C41,87.2,33.2,82.7,26.9,75.4L8.1,75.4 C16.9,90,32.3,100,50,100 C77.6,100,100,77.6,100,50 C100,32.3,90,16.9,75.4,8.1Z"
-      />
-    </svg>
+    />
   ),
 };
