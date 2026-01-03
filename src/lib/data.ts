@@ -17,6 +17,7 @@ export const services = [
     icon: HardHat,
     title: 'Civil Engineering',
     description: 'From infrastructure projects to urban development, we provide top-tier civil engineering services focused on innovation and sustainability.',
+    href: '/services/civil-engineering',
   },
   {
     icon: Sparkles,
