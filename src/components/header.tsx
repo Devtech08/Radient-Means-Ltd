@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -5,8 +6,9 @@ import { usePathname } from 'next/navigation';
 import { Icons } from '@/components/ui/icons';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
 import { Menu } from 'lucide-react';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -53,6 +55,12 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
+                <VisuallyHidden>
+                  <SheetTitle>Main Menu</SheetTitle>
+                  <SheetDescription>
+                    Navigate to different pages of the website.
+                  </SheetDescription>
+                </VisuallyHidden>
                 <div className="flex flex-col space-y-4 p-4">
                   <Link href="/" className="mr-6 flex items-center space-x-2 mb-4">
                     <Icons.logo className="h-8 w-8" />
