@@ -100,7 +100,7 @@ export default function HomePage() {
                   </div>
                 </li>
               </ul>
-               <Button asChild size="lg" className="mt-8">
+               <Button asChild size="lg" className="mt-8 bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
                  <Link href="/about-us">Learn More About Us</Link>
               </Button>
             </div>
