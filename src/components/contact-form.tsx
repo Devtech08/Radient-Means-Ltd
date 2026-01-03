@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { services } from '@/lib/data';
+import { sendContactEmailAction } from '@/app/actions';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -32,13 +33,22 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Message Sent!',
-      description: "Thank you for contacting us. We'll get back to you shortly.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const result = await sendContactEmailAction(values);
+
+    if (result.success) {
+        toast({
+            title: 'Message Sent!',
+            description: "Thank you for contacting us. We'll get back to you shortly.",
+        });
+        form.reset();
+    } else {
+        toast({
+            title: 'Error',
+            description: result.message,
+            variant: 'destructive',
+        });
+    }
   }
 
   return (
