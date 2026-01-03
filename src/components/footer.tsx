@@ -56,15 +56,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center justify-center md:justify-start">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+1 (234) 567-890</span>
+                <span>059 374 3244</span>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>info@radiantmeans.com</span>
+                <span>radiantmeansltd@gmail.com</span>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Corporate Ave, Business City</span>
+                <span>Kpone Industrial Area</span>
               </li>
             </ul>
           </div>

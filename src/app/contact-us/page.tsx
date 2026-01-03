@@ -31,9 +31,9 @@ export default function ContactUsPage() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Phone</h4>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                      +1 (234) 567-890
+                    <h4 className="font-semibold">Telephone</h4>
+                    <a href="tel:0593743244" className="text-muted-foreground hover:text-primary transition-colors">
+                      059 374 3244
                     </a>
                   </div>
                 </div>
@@ -43,8 +43,8 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <a href="mailto:info@radiantmeans.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@radiantmeans.com
+                    <a href="mailto:radiantmeansltd@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      radiantmeansltd@gmail.com
                     </a>
                   </div>
                 </div>
@@ -54,7 +54,8 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Location</h4>
-                    <p className="text-muted-foreground">123 Corporate Ave, Business City</p>
+                    <p className="text-muted-foreground">Kpone Industrial Area</p>
+                    <p className="text-muted-foreground text-sm">GPS Address: GK-0107-6527</p>
                   </div>
                 </div>
               </div>
