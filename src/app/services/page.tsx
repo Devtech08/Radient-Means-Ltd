@@ -22,11 +22,11 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => {
-              const isTransportation = service.title === 'Transportation';
+              const isLinkable = service.href;
 
-              if (isTransportation) {
+              if (isLinkable) {
                 return (
-                  <Link key={service.title} href="/services/transportation" className="flex">
+                  <Link key={service.title} href={service.href} className="flex">
                     <Card className="flex flex-col w-full shadow-md hover:shadow-xl transition-shadow">
                         <CardHeader>
                           <div className="flex items-center gap-4">

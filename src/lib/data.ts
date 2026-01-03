@@ -5,11 +5,13 @@ export const services = [
     icon: Truck,
     title: 'Transportation',
     description: 'Reliable and efficient logistics and transportation solutions tailored to meet your business needs, ensuring timely delivery and safety.',
+    href: '/services/transportation',
   },
   {
     icon: Gem,
     title: 'General Trading',
     description: 'Comprehensive import and export services, sourcing high-quality products and managing supply chains with expertise and integrity.',
+    href: '/services/general-trading',
   },
   {
     icon: HardHat,
