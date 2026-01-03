@@ -1,5 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { services } from '@/lib/data';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 export default function ServicesPage() {
   return (
@@ -18,21 +21,34 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
+            {services.map((service) => {
+              const isTransportation = service.title === 'Transportation';
+              const CardComponent = isTransportation ? Link : 'div';
+
+              return (
               <Card key={service.title} className="flex flex-col shadow-md hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                     <div className="bg-primary/10 p-3 rounded-full w-fit">
-                        <service.icon className="h-8 w-8 text-primary" />
-                     </div>
-                     <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
+                <CardComponent href={isTransportation ? '/services/transportation' : ''} className="flex flex-col h-full">
+                  <CardHeader>
+                    <div className="flex items-center gap-4">
+                      <div className="bg-primary/10 p-3 rounded-full w-fit">
+                          <service.icon className="h-8 w-8 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                  {isTransportation && (
+                    <CardContent>
+                        <Button variant="link" className="p-0 text-primary">
+                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                    </CardContent>
+                  )}
+                </CardComponent>
               </Card>
-            ))}
+            )})}
           </div>
         </div>
       </section>
