@@ -183,7 +183,7 @@ export default function TransportationPage() {
             Ready to experience dependable transportation services? Contact us to discuss your needs and get a customized quote.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
               <Link href="/contact-us">
                 Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
