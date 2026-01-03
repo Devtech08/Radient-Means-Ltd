@@ -23,6 +23,7 @@ export const services = [
     icon: Sparkles,
     title: 'Cleaning Services',
     description: 'Professional and thorough cleaning services for corporate, commercial, and residential properties, maintaining pristine environments.',
+    href: '/services/cleaning-services',
   },
   {
     icon: Wrench,
