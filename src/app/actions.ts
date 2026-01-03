@@ -1,6 +1,7 @@
 'use server';
 
-import { sendContactEmail, type SendContactEmailInput } from '@/ai/flows/send-contact-email-flow';
+import { sendContactEmail } from '@/ai/flows/send-contact-email-flow';
+import type { SendContactEmailInput } from '@/ai/schemas/contact-form-schema';
 
 /**
  * Server action to send the contact form email.
