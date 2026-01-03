@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, CheckCircle, Briefcase, Building, Shield, Truck, Wrench, Gem } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import { services } from '@/lib/data';
 
 export default function HomePage() {
@@ -47,17 +47,19 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.slice(0, 6).map((service) => (
-              <Card key={service.title} className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-2">
-                    <service.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{service.description.substring(0, 100)}...</p>
-                </CardContent>
-              </Card>
+              <Link key={service.title} href={service.href} className="flex">
+                <Card className="flex flex-col w-full text-center shadow-md hover:shadow-xl transition-shadow">
+                  <CardHeader>
+                    <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-2">
+                      <service.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardTitle>{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">{service.description.substring(0, 100)}...</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
            <div className="text-center mt-12">
