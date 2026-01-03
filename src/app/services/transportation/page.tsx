@@ -54,16 +54,15 @@ export default function TransportationPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-primary/80 text-white">
+      <section className="relative py-20 md:py-32 text-white">
          <Image
           src="https://picsum.photos/seed/trucks/1800/1200"
           alt="Logistics and Transportation"
           fill
-          style={{objectFit: "cover"}}
-          className="bg-primary -z-10"
+          className="object-cover"
           data-ai-hint="logistics fleet trucks"
         />
-        <div className="absolute inset-0 bg-primary/70 -z-10" />
+        <div className="absolute inset-0 bg-primary/70" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold">Transportation & Logistics Services</h1>
           <p className="mt-4 text-lg text-primary-foreground/90 max-w-3xl mx-auto">
