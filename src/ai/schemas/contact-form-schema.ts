@@ -2,7 +2,6 @@
  * @fileOverview Defines the Zod schema and TypeScript type for the contact form.
  */
 import { z } from 'zod';
-import { services } from '@/lib/data';
 
 export const SendContactEmailInputSchema = z.object({
   name: z.string().min(1, 'Full Name is required.').describe('The full name of the person sending the message.'),
