@@ -42,6 +42,7 @@ export const services = [
     icon: Shield,
     title: 'Security Services',
     description: 'Providing comprehensive security solutions, including personnel and technology, to protect your assets and ensure peace of mind.',
+    href: '/services/security-services',
   },
 ];
 
