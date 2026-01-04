@@ -64,7 +64,7 @@ export default function RealEstateDevelopmentPage() {
        <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
         <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/seed/real-estate-hero/1800/1200"
+              src="/images/real estate development.jpg"
               alt="Modern Real Estate Development"
               fill
               className="object-cover bg-primary"
