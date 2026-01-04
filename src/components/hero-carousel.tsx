@@ -23,7 +23,7 @@ export function HeroCarousel({ onImageChange }: HeroCarouselProps) {
     }, 10000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
-  }, [onImageChange]); // Empty dependency array ensures this runs only once on mount
+  }, [onImageChange]);
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden">
