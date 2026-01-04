@@ -6,24 +6,16 @@ import Image from 'next/image';
 import { heroImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-type HeroCarouselProps = {
-    onImageChange: () => void;
-}
-
-export function HeroCarousel({ onImageChange }: HeroCarouselProps) {
+export function HeroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % heroImages.length;
-        onImageChange();
-        return nextIndex;
-      });
+      setActiveIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
     }, 10000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
-  }, [onImageChange]);
+  }, []);
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden">
