@@ -64,11 +64,10 @@ export default function CleaningServicesPage() {
        <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
         <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/seed/cleaning-hero/1800/1200"
+              src="/images/my cleaning services.jpg"
               alt="Professional Cleaning Services"
               fill
               className="object-cover bg-primary"
-              data-ai-hint="professional cleaning team"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
