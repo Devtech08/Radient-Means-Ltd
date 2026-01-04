@@ -40,7 +40,7 @@ export function HeroCarousel() {
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-primary/80 z-10" />
+      <div className="absolute inset-0 bg-primary/80 z-10 backdrop-blur-sm" />
     </div>
   );
 }
