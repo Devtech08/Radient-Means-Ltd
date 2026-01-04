@@ -60,11 +60,10 @@ export default function AboutUsPage() {
             </div>
             <div>
               <Image
-                src="https://picsum.photos/seed/mission/600/450"
+                src="/images/about us.jpg"
                 width={600}
                 height={450}
                 alt="Corporate Mission"
-                data-ai-hint="business strategy meeting"
                 className="rounded-lg shadow-xl"
               />
             </div>
