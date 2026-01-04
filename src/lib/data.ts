@@ -1,4 +1,3 @@
-
 import { Truck, Gem, HardHat, Sparkles, Wrench, Building, Shield } from 'lucide-react';
 
 export const services = [
@@ -46,4 +45,40 @@ export const services = [
   },
 ];
 
-    
+export const heroImages = [
+    {
+        src: 'https://picsum.photos/seed/trucks-highway/1800/1200',
+        alt: 'Transportation services showing a fleet of trucks on a highway',
+        aiHint: 'logistics fleet trucks'
+    },
+    {
+        src: 'https://picsum.photos/seed/cargo-ship/1800/1200',
+        alt: 'General trading services with a large cargo ship at a port',
+        aiHint: 'container ship port'
+    },
+    {
+        src: 'https://picsum.photos/seed/bridge-construction/1800/1200',
+        alt: 'Civil engineering project with a bridge under-construction',
+        aiHint: 'bridge construction site'
+    },
+    {
+        src: 'https://picsum.photos/seed/office-cleaning/1800/1200',
+        alt: 'Cleaning services team working in a modern office',
+        aiHint: 'professional office cleaning'
+    },
+    {
+        src: 'https://picsum.photos/seed/power-lines/1800/1200',
+        alt: 'Electrical engineering with a view of power lines at sunset',
+        aiHint: 'electrical power grid'
+    },
+    {
+        src: 'https://picsum.photos/seed/city-skyline/1800/1200',
+        alt: 'Real estate development showing a modern city skyline',
+        aiHint: 'modern city architecture'
+    },
+    {
+        src: 'https://picsum.photos/seed/security-camera/1800/1200',
+        alt: 'Security services with a surveillance camera overlooking a facility',
+        aiHint: 'security cctv camera'
+    }
+]

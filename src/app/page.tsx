@@ -1,24 +1,17 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, Shield } from 'lucide-react';
 import { services } from '@/lib/data';
+import { HeroCarousel } from '@/components/hero-carousel';
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center text-white">
-        <div className="absolute inset-0 bg-primary/90 z-10" />
-         <Image
-          src="https://picsum.photos/seed/corporate/1800/1200"
-          alt="Radiant Means Ltd. Corporate Environment"
-          fill
-          style={{objectFit: "cover"}}
-          className="bg-primary"
-          data-ai-hint="corporate building"
-        />
+        <HeroCarousel />
         <div className="relative z-20 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Radiant Means Ltd.</h1>
           <p className="mt-4 text-xl md:text-2xl font-light italic text-accent">
