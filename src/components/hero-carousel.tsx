@@ -6,16 +6,21 @@ import Image from 'next/image';
 import { heroImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-export function HeroCarousel() {
+type HeroCarouselProps = {
+  onImageChange: () => void;
+};
+
+export function HeroCarousel({ onImageChange }: HeroCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
+      onImageChange();
       setActiveIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
     }, 10000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [onImageChange]);
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden">
@@ -24,7 +29,7 @@ export function HeroCarousel() {
           <div
             className={cn(
               "absolute inset-0 h-full w-full transition-opacity duration-1000 ease-in-out",
-              index === activeIndex ? "opacity-100 embla-zoom-out" : "opacity-0"
+              index === activeIndex ? "opacity-100" : "opacity-0"
             )}
             key={index}
           >
