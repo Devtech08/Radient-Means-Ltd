@@ -3,30 +3,22 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import useEmblaCarousel, { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
 import { heroImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-const OPTIONS: EmblaOptionsType = { loop: true };
-
 export function HeroCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 10000 })]);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
-    setActiveIndex(emblaApi.selectedScrollSnap());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 10000); // Change image every 10 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect(emblaApi);
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, onSelect]);
-
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden" ref={emblaRef}>
+    <div className="absolute inset-0 z-0 overflow-hidden">
       <div className="relative h-full w-full">
         {heroImages.map((image, index) => (
           <div
