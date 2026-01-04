@@ -1,25 +1,44 @@
 'use client';
 
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import useEmblaCarousel from 'embla-carousel-react';
+import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { heroImages } from '@/lib/data';
+import { cn } from '@/lib/utils';
 
 export function HeroCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
+    setActiveIndex(emblaApi.selectedScrollSnap());
+  }, []);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect(emblaApi);
+    emblaApi.on('select', onSelect);
+    emblaApi.on('reInit', onSelect);
+  }, [emblaApi, onSelect]);
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden" ref={emblaRef}>
       <div className="flex h-full">
         {heroImages.map((image, index) => (
-          <div className="relative flex-[0_0_100%] h-full" key={index}>
+          <div 
+            className={cn(
+                "relative flex-[0_0_100%] h-full",
+                {"embla-zoom-out": index === activeIndex }
+            )} 
+            key={index}
+          >
             <Image
               src={image.src}
               alt={image.alt}
               fill
               style={{ objectFit: 'cover' }}
-              className="bg-primary transition-opacity opacity-0 duration-[2s]"
-              onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
+              className="bg-primary"
               data-ai-hint={image.aiHint}
               priority={index === 0}
             />
