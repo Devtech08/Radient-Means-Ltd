@@ -1,4 +1,5 @@
 import { Truck, Gem, HardHat, Sparkles, Wrench, Building, Shield } from 'lucide-react';
+import placeholderImages from './placeholder-images.json';
 
 export const services = [
   {
@@ -45,40 +46,4 @@ export const services = [
   },
 ];
 
-export const heroImages = [
-    {
-        src: 'https://picsum.photos/seed/corporate/1800/1200',
-        alt: 'Radiant Means Ltd. Corporate Environment',
-        aiHint: 'corporate building'
-    },
-    {
-        src: 'https://picsum.photos/seed/trucks-highway/1800/1200',
-        alt: 'Transportation services showing a fleet of trucks on a highway',
-        aiHint: 'logistics fleet trucks'
-    },
-    {
-        src: 'https://picsum.photos/seed/construction/1800/1200',
-        alt: 'Civil Engineering and Construction Site',
-        aiHint: 'construction site'
-    },
-    {
-        src: 'https://picsum.photos/seed/cleaning/1800/1200',
-        alt: 'Professional Cleaning Services in a modern building',
-        aiHint: 'professional cleaning'
-    },
-    {
-        src: 'https://picsum.photos/seed/electrical/1800/1200',
-        alt: 'Electrical Engineering infrastructure',
-        aiHint: 'electrical power grid'
-    },
-    {
-        src: 'https://picsum.photos/seed/real-estate/1800/1200',
-        alt: 'Modern real-estate development skyline',
-        aiHint: 'modern city architecture'
-    },
-    {
-        src: 'https://picsum.photos/seed/security/1800/1200',
-        alt: 'Security services with a surveillance camera',
-        aiHint: 'security cctv camera'
-    }
-]
+export const heroImages = placeholderImages.hero;
