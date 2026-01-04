@@ -47,38 +47,38 @@ export const services = [
 
 export const heroImages = [
     {
+        src: 'https://picsum.photos/seed/corporate/1800/1200',
+        alt: 'Radiant Means Ltd. Corporate Environment',
+        aiHint: 'corporate building'
+    },
+    {
         src: 'https://picsum.photos/seed/trucks-highway/1800/1200',
         alt: 'Transportation services showing a fleet of trucks on a highway',
         aiHint: 'logistics fleet trucks'
     },
     {
-        src: 'https://picsum.photos/seed/cargo-ship/1800/1200',
-        alt: 'General trading services with a large cargo ship at a port',
-        aiHint: 'container ship port'
+        src: 'https://picsum.photos/seed/construction/1800/1200',
+        alt: 'Civil Engineering and Construction Site',
+        aiHint: 'construction site'
     },
     {
-        src: 'https://picsum.photos/seed/bridge-construction/1800/1200',
-        alt: 'Civil engineering project with a bridge under-construction',
-        aiHint: 'bridge construction site'
+        src: 'https://picsum.photos/seed/cleaning/1800/1200',
+        alt: 'Professional Cleaning Services in a modern building',
+        aiHint: 'professional cleaning'
     },
     {
-        src: 'https://picsum.photos/seed/office-cleaning/1800/1200',
-        alt: 'Cleaning services team working in a modern office',
-        aiHint: 'professional office cleaning'
-    },
-    {
-        src: 'https://picsum.photos/seed/power-lines/1800/1200',
-        alt: 'Electrical engineering with a view of power lines at sunset',
+        src: 'https://picsum.photos/seed/electrical/1800/1200',
+        alt: 'Electrical Engineering infrastructure',
         aiHint: 'electrical power grid'
     },
     {
-        src: 'https://picsum.photos/seed/city-skyline/1800/1200',
-        alt: 'Real estate development showing a modern city skyline',
+        src: 'https://picsum.photos/seed/real-estate/1800/1200',
+        alt: 'Modern real-estate development skyline',
         aiHint: 'modern city architecture'
     },
     {
-        src: 'https://picsum.photos/seed/security-camera/1800/1200',
-        alt: 'Security services with a surveillance camera overlooking a facility',
+        src: 'https://picsum.photos/seed/security/1800/1200',
+        alt: 'Security services with a surveillance camera',
         aiHint: 'security cctv camera'
     }
 ]
