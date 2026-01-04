@@ -64,11 +64,10 @@ export default function TransportationPage() {
        <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
         <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/seed/trucks/1800/1200"
+              src="/images/transport.jpg"
               alt="Logistics and Transportation"
               fill
               className="object-cover bg-primary"
-              data-ai-hint="logistics fleet trucks"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
