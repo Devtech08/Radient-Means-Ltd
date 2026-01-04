@@ -113,12 +113,11 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/marketing/600/500"
+                  src="/images/Commercial.jpg"
                   width={600}
                   height={500}
                   alt="Marketing strategy session"
                   className="rounded-lg shadow-xl"
-                  data-ai-hint="marketing strategy"
                 />
             </div>
           </div>
