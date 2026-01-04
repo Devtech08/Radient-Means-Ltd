@@ -63,11 +63,10 @@ export default function GeneralTradingPage() {
        <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
         <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/seed/trading-hero/1800/1200"
+              src="/images/trading.jpg"
               alt="Global Trade and Logistics"
               fill
               className="object-cover bg-primary"
-              data-ai-hint="global logistics shipping"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
