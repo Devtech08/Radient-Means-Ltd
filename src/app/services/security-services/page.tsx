@@ -161,12 +161,11 @@ export default function SecurityServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/training/600/500"
+                  src="/images/sec.training.jpg"
                   width={600}
                   height={500}
                   alt="Security team in training"
                   className="rounded-lg shadow-xl"
-                  data-ai-hint="security training briefing"
                 />
             </div>
             <div>
