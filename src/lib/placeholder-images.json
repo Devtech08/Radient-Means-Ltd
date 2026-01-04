@@ -1,37 +1,37 @@
 {
   "hero": [
     {
-      "src": "https://picsum.photos/seed/corporate/1800/1200",
+      "src": "/images/corporate.jpg",
       "alt": "Radiant Means Ltd. Corporate Environment",
       "aiHint": "corporate building"
     },
     {
-      "src": "https://picsum.photos/seed/transport/1800/1200",
+      "src": "/images/transportation.jpg",
       "alt": "Transportation services showing a fleet of trucks on a highway",
       "aiHint": "logistics fleet trucks"
     },
     {
-      "src": "https://picsum.photos/seed/construction/1800/1200",
+      "src": "/images/civil-engineering.jpg",
       "alt": "Civil Engineering and Construction Site",
       "aiHint": "construction site"
     },
     {
-      "src": "https://picsum.photos/seed/cleaning/1800/1200",
+      "src": "/images/cleaning-services.jpg",
       "alt": "Professional Cleaning Services in a modern building",
       "aiHint": "professional cleaning"
     },
     {
-      "src": "https://picsum.photos/seed/electrical/1800/1200",
+      "src": "/images/electrical-engineering.jpg",
       "alt": "Electrical Engineering infrastructure",
       "aiHint": "electrical power grid"
     },
     {
-      "src": "https://picsum.photos/seed/real-estate/1800/1200",
+      "src": "/images/real-estate-development.jpg",
       "alt": "Modern real-estate development skyline",
       "aiHint": "modern city architecture"
     },
     {
-      "src": "https://picsum.photos/seed/security/1800/1200",
+      "src": "/images/security-services.jpg",
       "alt": "Security services with a surveillance camera",
       "aiHint": "security cctv camera"
     }
