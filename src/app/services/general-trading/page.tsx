@@ -57,10 +57,6 @@ const processSteps = [
 export default function GeneralTradingPage() {
   const [animationKey, setAnimationKey] = useState(0);
 
-  const handleImageChange = () => {
-    setAnimationKey(prevKey => prevKey + 1);
-  };
-
   return (
     <div className="bg-background">
       {/* Hero Section */}
@@ -71,8 +67,6 @@ export default function GeneralTradingPage() {
               alt="Global Trade and Logistics"
               fill
               className="object-cover bg-primary"
-              onLoad={handleImageChange}
-              key={activeIndex}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
