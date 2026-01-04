@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -5,28 +7,38 @@ import { ArrowRight, CheckCircle, Shield } from 'lucide-react';
 import { services } from '@/lib/data';
 import { HeroCarousel } from '@/components/hero-carousel';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
+
 
 export default function HomePage() {
+   const [animationKey, setAnimationKey] = useState(0);
+
+  const handleImageChange = () => {
+    setAnimationKey(prevKey => prevKey + 1);
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center text-white">
-        <HeroCarousel />
-        <div className="relative z-20 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Radiant Means Ltd.</h1>
-          <p className="mt-4 text-xl md:text-2xl font-light italic text-accent">
-            “Service based on Due Diligence.”
-          </p>
-          <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg">
-            Radiant Means Ltd. is committed to generating sustainable income through the provision of high-quality and reliable services to customers across diverse sectors.
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/services">Our Services</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 hover:text-accent">
-              <Link href="/contact-us">Contact Us</Link>
-            </Button>
+      <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
+        <HeroCarousel onImageChange={handleImageChange} />
+        <div className="relative z-20 text-left px-4 md:px-12 lg:px-24 w-full max-w-2xl">
+           <div key={animationKey} className={cn("slide-up-fade-in")}>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Radiant Means Ltd.</h1>
+            <p className="mt-4 text-xl md:text-2xl font-light italic text-accent">
+              “Service based on Due Diligence.”
+            </p>
+            <p className="mt-6 max-w-xl text-base md:text-lg">
+              Radiant Means Ltd. is committed to generating sustainable income through the provision of high-quality and reliable services to customers across diverse sectors.
+            </p>
+            <div className="mt-8 flex justify-start gap-4">
+              <Button asChild size="lg" variant="secondary">
+                <Link href="/services">Our Services</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 hover:text-accent">
+                <Link href="/contact-us">Contact Us</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
