@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 export function HeroCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 5000 })]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 10000 })]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
