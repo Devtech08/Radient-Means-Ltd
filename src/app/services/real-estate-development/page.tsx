@@ -58,6 +58,10 @@ const processSteps = [
 export default function RealEstateDevelopmentPage() {
   const [animationKey, setAnimationKey] = useState(0);
 
+    const handleImageChange = () => {
+    setAnimationKey(prevKey => prevKey + 1);
+  };
+
   return (
     <div className="bg-background">
       {/* Hero Section */}
@@ -69,6 +73,7 @@ export default function RealEstateDevelopmentPage() {
               fill
               className="object-cover bg-primary"
               data-ai-hint="modern architecture building"
+              onLoad={handleImageChange}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
@@ -153,7 +158,7 @@ export default function RealEstateDevelopmentPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/blueprint/600/500"
+                  src="/images/quality.jpg"
                   width={600}
                   height={500}
                   alt="Architectural blueprint"
