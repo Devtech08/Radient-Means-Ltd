@@ -28,7 +28,7 @@ export default function HomePage() {
             <p className="mt-4 text-xl md:text-2xl font-light italic text-accent">
               “Service based on Due Diligence.”
             </p>
-            <p className="mt-6 max-w-xl text-base md:text-lg">
+            <p className="mt-6 max-w-xl text-base md:text-lg text-primary-foreground">
               Radiant Means Ltd. is committed to generating sustainable income through the provision of high-quality and reliable services to customers across diverse sectors.
             </p>
             <div className="mt-8 flex justify-start gap-4">
@@ -113,12 +113,12 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/teamwork/600/500"
+                  src="https://picsum.photos/seed/marketing/600/500"
                   width={600}
                   height={500}
-                  alt="Professional Team"
+                  alt="Marketing strategy session"
                   className="rounded-lg shadow-xl"
-                  data-ai-hint="teamwork collaboration"
+                  data-ai-hint="marketing strategy"
                 />
             </div>
           </div>
