@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { heroImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -15,7 +15,7 @@ export function HeroCarousel() {
     }, 10000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden">
@@ -40,7 +40,7 @@ export function HeroCarousel() {
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-primary/80 z-10 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-primary/80 z-10" />
     </div>
   );
 }
