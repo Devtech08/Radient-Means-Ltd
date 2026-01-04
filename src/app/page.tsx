@@ -13,11 +13,15 @@ import { cn } from '@/lib/utils';
 export default function HomePage() {
    const [animationKey, setAnimationKey] = useState(0);
 
+  const handleImageChange = () => {
+    setAnimationKey(prevKey => prevKey + 1);
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
-        <HeroCarousel />
+        <HeroCarousel onImageChange={handleImageChange} />
         <div className="relative z-20 text-left px-4 md:px-12 lg:px-24 w-full max-w-2xl">
            <div key={animationKey} className={cn("slide-up-fade-in")}>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Radiant Means Ltd.</h1>
