@@ -66,6 +66,10 @@ const projectSteps = [
 
 export default function ElectricalEngineeringPage() {
   const [animationKey, setAnimationKey] = useState(0);
+    const handleImageChange = () => {
+    setAnimationKey(prevKey => prevKey + 1);
+  };
+
 
   return (
     <div className="bg-background">
@@ -78,6 +82,7 @@ export default function ElectricalEngineeringPage() {
               fill
               className="object-cover bg-primary"
               data-ai-hint="electrical panel wiring"
+              onLoad={handleImageChange}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
@@ -162,12 +167,12 @@ export default function ElectricalEngineeringPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/safety-first/600/500"
+                  src="/images/electric safety.jpg"
                   width={600}
                   height={500}
-                  alt="Engineer with safety gear"
+                  alt="Electrical safety compliance"
                   className="rounded-lg shadow-xl"
-                  data-ai-hint="engineer safety gear"
+                  data-ai-hint="electrical safety"
                 />
             </div>
             <div>
