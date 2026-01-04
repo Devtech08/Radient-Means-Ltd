@@ -57,6 +57,10 @@ const projectSteps = [
 export default function CivilEngineeringPage() {
   const [animationKey, setAnimationKey] = useState(0);
 
+  const handleImageChange = () => {
+    setAnimationKey(prevKey => prevKey + 1);
+  };
+
   return (
     <div className="bg-background">
       {/* Hero Section */}
@@ -67,7 +71,7 @@ export default function CivilEngineeringPage() {
               alt="Civil Engineering and Construction Site"
               fill
               className="object-cover bg-primary"
-              data-ai-hint="construction site blueprint"
+              onLoad={handleImageChange}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
@@ -152,7 +156,7 @@ export default function CivilEngineeringPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="flex justify-center">
                <Image
-                  src="https://picsum.photos/seed/engineer/600/500"
+                  src="/images/civil safety compliance.jpg"
                   width={600}
                   height={500}
                   alt="Engineer reviewing plans"
