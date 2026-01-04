@@ -1,8 +1,12 @@
+
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Package, Search, Truck, Shield, HardHat, Wrench, Sparkles, Phone } from 'lucide-react';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 const goodsCategories = [
   {
@@ -51,23 +55,37 @@ const processSteps = [
 ]
 
 export default function GeneralTradingPage() {
+  const [animationKey, setAnimationKey] = useState(0);
+
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 text-white">
-         <Image
-          src="https://picsum.photos/seed/trading-hero/1800/1200"
-          alt="Global Trade and Logistics"
-          fill
-          className="object-cover"
-          data-ai-hint="global logistics shipping"
-        />
-        <div className="absolute inset-0 bg-primary/80" />
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold">General Trading Services</h1>
-          <p className="mt-4 text-lg text-primary-foreground/90 max-w-3xl mx-auto">
-            Your Trusted Partner in Sourcing and Supplying Quality Goods Across Industries.
-          </p>
+       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
+        <div className="absolute inset-0 z-0">
+            <Image
+              src="https://picsum.photos/seed/trading-hero/1800/1200"
+              alt="Global Trade and Logistics"
+              fill
+              className="object-cover bg-primary"
+              data-ai-hint="global logistics shipping"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
+        </div>
+        <div className="relative z-20 text-left px-4 md:px-12 lg:px-24 w-full max-w-2xl">
+           <div key={animationKey} className={cn("slide-up-fade-in")}>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">General Trading</h1>
+            <p className="mt-4 text-xl md:text-2xl font-light text-primary-foreground/90">
+              Your Trusted Partner in Sourcing and Supplying Quality Goods.
+            </p>
+            <p className="mt-6 max-w-xl text-base md:text-lg text-primary-foreground">
+              We excel in the sourcing, distribution, and supply of premium goods, underpinned by our motto: “Service based on Due Diligence.”
+            </p>
+            <div className="mt-8 flex justify-start gap-4">
+              <Button asChild size="lg" variant="secondary">
+                 <Link href="/contact-us">Inquire Now</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
