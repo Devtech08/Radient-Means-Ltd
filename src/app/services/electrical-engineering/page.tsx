@@ -73,7 +73,7 @@ export default function ElectricalEngineeringPage() {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start text-white">
         <div className="absolute inset-0 z-0">
             <Image
-              src="https://picsum.photos/seed/electrician/1800/1200"
+              src="/images/electrical engineering.jpg"
               alt="Electrical engineer working on a panel"
               fill
               className="object-cover bg-primary"
@@ -222,3 +222,5 @@ export default function ElectricalEngineeringPage() {
     </div>
   );
 }
+
+    
