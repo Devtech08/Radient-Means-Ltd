@@ -62,9 +62,12 @@ export default function Footer() {
                 <Mail className="h-4 w-4 mr-2" />
                 <span>radiantmeansltd@gmail.com</span>
               </li>
-              <li className="flex items-center justify-center md:justify-start">
-                <MapPin className="h-4 w-4 mr-2" />
-                <span>Kpone Industrial Area</span>
+              <li className="flex items-start justify-center md:justify-start">
+                <MapPin className="h-4 w-4 mr-2 mt-1 flex-shrink-0" />
+                <div className="flex flex-col">
+                    <span>Kpone Industrial Area</span>
+                    <span className="text-primary-foreground/80">GPS Address: GK-0107-6527</span>
+                </div>
               </li>
             </ul>
           </div>
