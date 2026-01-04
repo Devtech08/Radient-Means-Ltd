@@ -17,7 +17,7 @@ export default function HomePage() {
           <p className="mt-4 text-xl md:text-2xl font-light italic text-accent">
             “Service based on Due Diligence.”
           </p>
-          <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg text-primary-foreground/90">
+          <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg bg-white/90 text-black p-4 rounded-md">
             Radiant Means Ltd. is committed to generating sustainable income through the provision of high-quality and reliable services to customers across diverse sectors.
           </p>
           <div className="mt-8 flex justify-center gap-4">
