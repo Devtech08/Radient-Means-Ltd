@@ -1,6 +1,5 @@
 
 import { Truck, Gem, HardHat, Sparkles, Wrench, Building, Shield } from 'lucide-react';
-import type { Article } from './types';
 
 
 export const services = [
@@ -86,41 +85,3 @@ export const heroImages = [
     }
   ];
   
-export const articles: Article[] = [
-    { 
-        title: 'The Importance of a Balanced Diet', 
-        description: 'Learn how a balanced diet can improve your overall health and well-being.',
-        image: 'https://picsum.photos/seed/diet/600/400',
-        aiHint: 'healthy food'
-    },
-    { 
-        title: 'Benefits of Regular Exercise', 
-        description: 'Discover the many benefits of incorporating regular physical activity into your routine.',
-        image: 'https://picsum.photos/seed/exercise/600/400',
-        aiHint: 'person running'
-    },
-    { 
-        title: 'Managing Stress for a Healthier Life', 
-        description: 'Tips and techniques to effectively manage stress and improve your mental health.',
-        image: 'https://picsum.photos/seed/stress/600/400',
-        aiHint: 'calm meditation'
-    },
-     { 
-        title: 'Understanding Cholesterol', 
-        description: 'An in-depth look at cholesterol, its effects on your body, and how to manage it.',
-        image: 'https://picsum.photos/seed/cholesterol/600/400',
-        aiHint: 'medical chart'
-    },
-    { 
-        title: 'The Guide to a Good Night\'s Sleep', 
-        description: 'Having trouble sleeping? This guide will help you understand the importance of sleep and how to improve its quality.',
-        image: 'https://picsum.photos/seed/sleep/600/400',
-        aiHint: 'person sleeping'
-    },
-    { 
-        title: 'Allergies: Causes, Symptoms, and Treatment', 
-        description: 'A comprehensive overview of common allergies and the best ways to manage them.',
-        image: 'https://picsum.photos/seed/allergies/600/400',
-        aiHint: 'flowers pollen'
-    },
-];
