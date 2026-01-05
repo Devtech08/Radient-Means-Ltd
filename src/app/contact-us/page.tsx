@@ -28,8 +28,8 @@ export default function ContactUsPage() {
                 Our team is ready to assist you. Contact us through any of the channels below, or use the form to send us a direct message.
               </p>
               <div className="space-y-6">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -39,8 +39,8 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -50,8 +50,8 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
+                  <div className="bg-primary/10 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
