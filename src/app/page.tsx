@@ -115,7 +115,7 @@ export default function HomePage() {
                <Image
                   src="/images/Commercial.jpg"
                   width={600}
-                  height={500}
+                  height={400}
                   alt="Marketing strategy session"
                   className="rounded-lg shadow-xl"
                 />
