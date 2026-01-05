@@ -22,13 +22,13 @@ export default function ContactUsPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:col-span-2 space-y-8 text-center lg:text-left">
               <h2 className="text-2xl font-bold text-primary">Get in Touch</h2>
               <p className="text-muted-foreground">
                 Our team is ready to assist you. Contact us through any of the channels below, or use the form to send us a direct message.
               </p>
               <div className="space-y-6">
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
@@ -39,7 +39,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
@@ -50,7 +50,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
