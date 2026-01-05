@@ -111,13 +111,15 @@ export default function HomePage() {
                  <Link href="/about-us">Learn More About Us</Link>
               </Button>
             </div>
-            <div className="lg:col-span-3 lg:pl-12 relative w-full h-[500px] rounded-lg overflow-hidden">
-               <Image
-                  src="/images/Commercial a.jpg"
-                  fill
-                  alt="Marketing strategy session"
-                  className="object-cover"
-                />
+            <div className="lg:col-span-3 lg:pl-12 group">
+              <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
+                <Image
+                    src="/images/Commercial a.jpg"
+                    fill
+                    alt="Marketing strategy session"
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-95"
+                  />
+              </div>
             </div>
           </div>
         </div>
