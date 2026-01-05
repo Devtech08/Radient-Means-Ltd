@@ -78,8 +78,8 @@ export default function HomePage() {
        {/* Why Choose Us Section */}
       <section className="py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-5 gap-12 items-center">
-            <div className="lg:col-span-2">
+          <div className="grid lg:grid-cols-5 gap-8 items-center">
+            <div className="lg:col-span-2 lg:pr-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Why Choose Radiant Means Ltd.?</h2>
               <p className="text-muted-foreground mb-6">
                 Our commitment to excellence and client satisfaction sets us apart. We deliver reliable and high-quality solutions tailored to your needs.
@@ -111,7 +111,7 @@ export default function HomePage() {
                  <Link href="/about-us">Learn More About Us</Link>
               </Button>
             </div>
-            <div className="lg:col-span-3 relative w-full h-[500px] rounded-lg overflow-hidden shadow-xl">
+            <div className="lg:col-span-3 lg:pl-12 relative w-full h-[500px] rounded-lg overflow-hidden">
                <Image
                   src="/images/Commercial a.jpg"
                   fill
