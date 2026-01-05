@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation';
 import { Icons } from '@/components/ui/icons';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription, SheetClose } from './ui/sheet';
 import { Menu } from 'lucide-react';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+import { useState } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -20,6 +21,8 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -48,7 +51,7 @@ export default function Header() {
             </nav>
            {/* Mobile Menu */}
           <div className="md:hidden ml-4">
-            <Sheet>
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
@@ -63,7 +66,7 @@ export default function Header() {
                   </SheetDescription>
                 </VisuallyHidden>
                 <div className="flex flex-col space-y-4 p-4">
-                  <Link href="/" className="mr-6 flex items-center space-x-2 mb-4">
+                  <Link href="/" className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                     <Icons.logo className="h-8 w-8" />
                     <span className="font-bold">Radiant Means</span>
                   </Link>
@@ -75,6 +78,7 @@ export default function Header() {
                         'text-lg transition-colors hover:text-foreground/80',
                         pathname === link.href ? 'text-foreground' : 'text-foreground/60'
                       )}
+                      onClick={() => setIsSheetOpen(false)}
                     >
                       {link.label}
                     </Link>
