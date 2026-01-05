@@ -113,9 +113,9 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
                <Image
-                  src="/images/Commercial.jpg"
+                  src="/images/Commercial a.jpg"
                   width={600}
-                  height={350}
+                  height={400}
                   alt="Marketing strategy session"
                   className="rounded-lg shadow-xl"
                 />
