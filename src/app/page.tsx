@@ -113,7 +113,7 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
                <Image
-                  src="/images/my service.jpg"
+                  src="/images/Commercial a.jpg"
                   width={600}
                   height={400}
                   alt="Marketing strategy session"
