@@ -76,7 +76,7 @@ export default function HomePage() {
       </section>
 
        {/* Why Choose Us Section */}
-      <section className="py-16 md:py-24 bg-secondary/50">
+      <section className="py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -113,7 +113,7 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
                <Image
-                  src="/images/Commercial a.jpg"
+                  src="/images/my service.jpg"
                   width={600}
                   height={400}
                   alt="Marketing strategy session"
