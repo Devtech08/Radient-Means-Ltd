@@ -78,10 +78,10 @@ export default function HomePage() {
        {/* Why Choose Us Section */}
       <section className="py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-5 gap-8 items-center">
-            <div className="lg:col-span-2 lg:pr-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Why Choose Radiant Means Ltd.?</h2>
-              <p className="text-muted-foreground mb-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="lg:pr-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center lg:text-left">Why Choose Radiant Means Ltd.?</h2>
+              <p className="text-muted-foreground mb-6 text-center lg:text-left">
                 Our commitment to excellence and client satisfaction sets us apart. We deliver reliable and high-quality solutions tailored to your needs.
               </p>
               <ul className="space-y-4">
@@ -107,19 +107,19 @@ export default function HomePage() {
                   </div>
                 </li>
               </ul>
-               <Button asChild size="lg" className="mt-8 bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
-                 <Link href="/about-us">Learn More About Us</Link>
-              </Button>
+               <div className="flex justify-center lg:justify-start">
+                <Button asChild size="lg" className="mt-8 bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
+                  <Link href="/about-us">Learn More About Us</Link>
+                </Button>
+               </div>
             </div>
-            <div className="lg:col-span-3 lg:pl-12 group">
-              <div className="relative w-full h-[500px] rounded-lg overflow-hidden transition-transform duration-300 ease-in-out group-hover:scale-105">
-                <Image
-                    src="/images/Commercial a.jpg"
-                    fill
-                    alt="Marketing strategy session"
-                    className="object-cover"
-                  />
-              </div>
+            <div className="relative w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden group">
+              <Image
+                  src="/images/Commercial a.jpg"
+                  fill
+                  alt="Marketing strategy session"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
             </div>
           </div>
         </div>
