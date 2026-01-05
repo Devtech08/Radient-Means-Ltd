@@ -111,13 +111,12 @@ export default function HomePage() {
                  <Link href="/about-us">Learn More About Us</Link>
               </Button>
             </div>
-            <div className="flex justify-center">
+            <div className="relative w-full h-[500px] rounded-lg overflow-hidden shadow-xl">
                <Image
                   src="/images/Commercial a.jpg"
-                  width={600}
-                  height={400}
+                  fill
                   alt="Marketing strategy session"
-                  className="rounded-lg shadow-xl"
+                  className="object-cover"
                 />
             </div>
           </div>
