@@ -55,7 +55,7 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Full Name</FormLabel>
+                <FormLabel className="text-center sm:text-left">Full Name</FormLabel>
                 <FormControl>
                   <Input placeholder="Enter your full name" {...field} />
                 </FormControl>
@@ -68,7 +68,7 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email Address</FormLabel>
+                <FormLabel className="text-center sm:text-left">Email Address</FormLabel>
                 <FormControl>
                   <Input placeholder="you@example.com" {...field} />
                 </FormControl>
@@ -83,7 +83,7 @@ export function ContactForm() {
             name="subject"
             render={({ field }) => (
                 <FormItem>
-                <FormLabel>Subject</FormLabel>
+                <FormLabel className="text-center sm:text-left">Subject</FormLabel>
                 <FormControl>
                     <Input placeholder="Regarding your services" {...field} />
                 </FormControl>
@@ -96,7 +96,7 @@ export function ContactForm() {
                 name="service"
                 render={({ field }) => (
                     <FormItem>
-                    <FormLabel>Service of Interest</FormLabel>
+                    <FormLabel className="text-center sm:text-left">Service of Interest</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                         <SelectTrigger>
@@ -119,7 +119,7 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="text-center sm:text-left">Message</FormLabel>
               <FormControl>
                 <Textarea placeholder="Please describe your inquiry..." className="min-h-[120px]" {...field} />
               </FormControl>

@@ -30,7 +30,7 @@ export default function ContactUsPage() {
                 </p>
               </div>
               <div className="space-y-6">
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center text-center lg:text-left">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
@@ -41,7 +41,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center text-center lg:text-left">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
@@ -52,7 +52,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-start text-center lg:text-left">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-start lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>

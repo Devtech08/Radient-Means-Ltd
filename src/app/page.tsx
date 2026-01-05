@@ -79,28 +79,28 @@ export default function HomePage() {
       <section className="py-20 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="lg:pr-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center lg:text-left">Why Choose Radiant Means Ltd.?</h2>
-              <p className="text-muted-foreground mb-6 text-center lg:text-left">
+            <div className="lg:pr-12 text-center lg:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Why Choose Radiant Means Ltd.?</h2>
+              <p className="text-muted-foreground mb-6">
                 Our commitment to excellence and client satisfaction sets us apart. We deliver reliable and high-quality solutions tailored to your needs.
               </p>
               <ul className="space-y-4">
-                <li className="flex items-start justify-center text-center lg:justify-start lg:text-left">
-                  <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
+                <li className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left">
+                  <CheckCircle className="h-6 w-6 text-accent mr-0 mb-2 lg:mr-3 lg:mt-1 lg:mb-0 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Proven Experience</h4>
                     <p className="text-muted-foreground">A track record of success across multiple industries.</p>
                   </div>
                 </li>
-                <li className="flex items-start justify-center text-center lg:justify-start lg:text-left">
-                  <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
+                <li className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left">
+                  <CheckCircle className="h-6 w-6 text-accent mr-0 mb-2 lg:mr-3 lg:mt-1 lg:mb-0 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Commitment to Due Diligence</h4>
                     <p className="text-muted-foreground">Ensuring every project is executed with precision and care.</p>
                   </div>
                 </li>
-                <li className="flex items-start justify-center text-center lg:justify-start lg:text-left">
-                  <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
+                <li className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left">
+                  <CheckCircle className="h-6 w-6 text-accent mr-0 mb-2 lg:mr-3 lg:mt-1 lg:mb-0 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Unmatched Quality Service</h4>
                     <p className="text-muted-foreground">We uphold the highest standards in every service we provide.</p>
