@@ -117,7 +117,7 @@ export default function HomePage() {
                     src="/images/Commercial a.jpg"
                     fill
                     alt="Marketing strategy session"
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-95"
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                   />
               </div>
             </div>
