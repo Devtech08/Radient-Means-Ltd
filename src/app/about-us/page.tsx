@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Globe, Target, CheckCircle, Award, Users, Shield } from 'lucide-react';
 
@@ -41,8 +42,8 @@ export default function AboutUsPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="pr-8">
-              <h2 className="text-3xl font-bold text-primary flex items-center mb-4">
+            <div className="md:pr-8 text-center md:text-left">
+              <h2 className="text-3xl font-bold text-primary flex items-center justify-center md:justify-start mb-4">
                 <Globe className="h-8 w-8 mr-3 text-accent" />
                 Our Mission
               </h2>
@@ -50,7 +51,7 @@ export default function AboutUsPage() {
                 To be a leading diversified service provider, recognized for our commitment to due diligence, quality, and sustainable value creation for our stakeholders.
               </p>
 
-              <h2 className="text-3xl font-bold text-primary flex items-center mb-4">
+              <h2 className="text-3xl font-bold text-primary flex items-center justify-center md:justify-start mb-4">
                 <Target className="h-8 w-8 mr-3 text-accent" />
                 Our Goal
               </h2>
