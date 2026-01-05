@@ -85,21 +85,21 @@ export default function HomePage() {
                 Our commitment to excellence and client satisfaction sets us apart. We deliver reliable and high-quality solutions tailored to your needs.
               </p>
               <ul className="space-y-4">
-                <li className="flex items-start">
+                <li className="flex items-start justify-center lg:justify-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Proven Experience</h4>
                     <p className="text-muted-foreground">A track record of success across multiple industries.</p>
                   </div>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center lg:justify-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Commitment to Due Diligence</h4>
                     <p className="text-muted-foreground">Ensuring every project is executed with precision and care.</p>
                   </div>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center lg:justify-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Unmatched Quality Service</h4>
