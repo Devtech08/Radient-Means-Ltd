@@ -22,13 +22,15 @@ export default function ContactUsPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-8 text-center lg:text-left">
-              <h2 className="text-2xl font-bold text-primary">Get in Touch</h2>
-              <p className="text-muted-foreground">
-                Our team is ready to assist you. Contact us through any of the channels below, or use the form to send us a direct message.
-              </p>
+            <div className="lg:col-span-2 space-y-8">
+              <div className="text-center lg:text-left">
+                <h2 className="text-2xl font-bold text-primary">Get in Touch</h2>
+                <p className="text-muted-foreground mt-2">
+                  Our team is ready to assist you. Contact us through any of the channels below, or use the form to send us a direct message.
+                </p>
+              </div>
               <div className="space-y-6">
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center text-center lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
@@ -39,7 +41,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-center text-center lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
@@ -50,7 +52,7 @@ export default function ContactUsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
+                <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-start text-center lg:text-left">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
@@ -66,7 +68,7 @@ export default function ContactUsPage() {
             {/* Contact Form */}
             <div className="lg:col-span-3">
                <Card className="shadow-lg bg-secondary/30">
-                <CardHeader>
+                <CardHeader className="text-center lg:text-left">
                     <CardTitle className="text-2xl">Send us a message</CardTitle>
                 </CardHeader>
                 <CardContent>
