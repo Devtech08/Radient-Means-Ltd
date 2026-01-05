@@ -112,7 +112,7 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="lg:col-span-3 lg:pl-12 group">
-              <div className="relative w-full h-[500px] rounded-lg overflow-hidden transition-transform duration-500 ease-in-out group-hover:scale-105">
+              <div className="relative w-full h-[500px] rounded-lg overflow-hidden transition-transform duration-300 ease-in-out group-hover:scale-105">
                 <Image
                     src="/images/Commercial a.jpg"
                     fill
